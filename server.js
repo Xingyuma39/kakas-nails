@@ -23,13 +23,13 @@ const app = express();
 
 /* Configure the app to refresh the browser when nodemon restarts
 --------------------------------------------------------------- */
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-    // wait for nodemon to fully restart before refreshing the page
-    setTimeout(() => {
-        liveReloadServer.refresh("/");
-    }, 100);
-});
+// const liveReloadServer = livereload.createServer();
+// liveReloadServer.server.once("connection", () => {
+//     // wait for nodemon to fully restart before refreshing the page
+//     setTimeout(() => {
+//         liveReloadServer.refresh("/");
+//     }, 100);
+// });
 
 
 /* Configure the app (app.set)
@@ -40,8 +40,21 @@ app.set('views', path.join(__dirname, 'views'));
 
 /* Middleware (app.use)
 --------------------------------------------------------------- */
+if(process.env.ON_HEROKU === 'false') {
+    const liveReloadServer = livereload.createServer();
+    liveReloadServer.server.once("connection", () => {
+        setTimeout(() => {
+            liveReloadServer.refresh("/");
+        }, 100);
+    });
+    app.use(connectLiveReload());
+}
+
 app.use(express.static('public'))
-app.use(connectLiveReload());
+
+// app.use(express.urlencoded({ extended: true }));
+// app.use(methodOverride('_method'));
+// app.use(connectLiveReload());
 
 
 /* Mount routes
@@ -56,17 +69,19 @@ app.get('/', function (req, res) {
         })
 });
 
-app.get('/seed', function (req, res) {
-    db.Product.deleteMany({})
-        .then(removedProducts => {
-            console.log(`Removed ${removedProducts.deletedCount} products`)
-            db.Product.insertMany(db.seedProducts)
-                .then(addedProducts => {
-                    console.log(`Added ${addedProducts.length} products`)
-                    res.json(addedProducts)
-                })
-        })
-});
+if(process.env.ON_HEROKU === 'false') {
+    app.get('/seed', function (req, res) {
+        db.Product.deleteMany({})
+            .then(removedProducts => {
+                console.log(`Removed ${removedProducts.deletedCount} products`)
+                db.Product.insertMany(db.seedProducts)
+                    .then(addedProducts => {
+                        console.log(`Added ${addedProducts.length} products`)
+                        res.json(addedProducts)
+                    })
+            })
+    });
+}
 
 // This tells our app to look at the `controllers/products.js` file 
 // to handle all routes that begin with `localhost:3000/pets`
