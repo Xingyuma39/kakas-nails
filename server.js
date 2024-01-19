@@ -6,6 +6,10 @@ const express = require('express');
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 
+/* Require the routes in the controllers folder
+--------------------------------------------------------------- */
+const productsCtrl = require('./controllers/products')
+
 
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
@@ -43,7 +47,13 @@ app.use(connectLiveReload());
 /* Mount routes
 --------------------------------------------------------------- */
 app.get('/', function (req, res) {
-    res.send('Kaka\'s Nails')
+    // res.send('Kaka\'s Nails')
+    db.Product.find({ isFeatured: true })
+        .then(products => {
+            res.render('home', {
+                products: products
+            })
+        })
 });
 
 app.get('/seed', function (req, res) {
@@ -58,7 +68,14 @@ app.get('/seed', function (req, res) {
         })
 });
 
+// This tells our app to look at the `controllers/products.js` file 
+// to handle all routes that begin with `localhost:3000/pets`
+app.use('/products', productsCtrl)
 
+// The "catch-all" route: Runs for any other URL that doesn't match the above routes
+app.get('*', function (req, res) {
+    res.send('404 Not Found')
+});
 
 /* Tell the app to listen on the specified port
 --------------------------------------------------------------- */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: 'Kaka\'s Nails'}) %>
+    <link rel="stylesheet" href="/styles/pet-index.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Available Products</h2>
+        <h3></h3>
+    </section>
+
+    <main>
+        <section class="listings">
+            <ul>
+                <% for (let product of products) { %>
+                <li>
+                    <figure>
+                        <img src="<%= product.photo %>">
+                        <figcaption>
+                            <h4><%= product.name %></h4>
+                            <p></p>
+                            <a href="/products/<%= product._id %>">Learn More</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

@@ -7,7 +7,7 @@ const products = [
         size: "S",
         price: 49.99,
         quantity: 3,
-        photo: "",
+        photo: "/assets/blue.jpg",
         isFeatured: true
     },
     {
@@ -18,8 +18,8 @@ const products = [
         size: "M",
         price: 59.99,
         quantity: 1,
-        photo: "",
-        isFeatured: true
+        photo: "/assets/onepiece.jpg",
+        isFeatured: false
     },
     {
         name: "Coral Nail Set",
@@ -29,8 +29,8 @@ const products = [
         size: "L",
         price: 69.99,
         quantity: 2,
-        photo: "",
-        isFeatured: false
+        photo: "/assets/coral.jpg",
+        isFeatured: true
     },
     {
         name: "X'Mas Nail Set",
@@ -40,7 +40,7 @@ const products = [
         size: "M",
         price: 59.99,
         quantity: 1,
-        photo: "",
+        photo: "/assets/xmas.jpg",
         isFeatured: false
     },
     {
@@ -51,7 +51,7 @@ const products = [
         size: "S",
         price: 39.99,
         quantity: 5,
-        photo: "",
+        photo: "/assets/peach.jpg",
         isFeatured: false
     },
     {
@@ -62,7 +62,7 @@ const products = [
         size: "M",
         price: 15.99,
         quantity: 2,
-        photo: "",
+        photo: "/assets/sunflower.jpg",
         isFeatured: false
     },
     {
@@ -73,8 +73,8 @@ const products = [
         size: "S",
         price: 9.99,
         quantity: 4,
-        photo: "",
-        isFeatured: false
+        photo: "/assets/babyyoda.jpg",
+        isFeatured: true
     },
     {
         name: "Pokemon Gengar Keychain",
@@ -84,7 +84,7 @@ const products = [
         size: "S",
         price: 9.99,
         quantity: 2,
-        photo: "",
+        photo: "/assets/gengar.jpg",
         isFeatured: false
     },
     {
@@ -95,7 +95,7 @@ const products = [
         size: "S",
         price: 9.99,
         quantity: 1,
-        photo: "",
+        photo: "/assets/pigbee.jpg",
         isFeatured: false
     }
 ]

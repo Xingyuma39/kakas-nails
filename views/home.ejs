@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: 'Kaka\'s Nails'}) %>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <main>
+        <section class="hero">
+            <h2>Keychains now in stock</h2>
+            <a href="/products" class="btn">Shop Now!</a>
+        </section>
+
+        <!-- <section class="about">
+            <h2>About Us</h2>
+            <p>Furever Friends is a non-profit organization dedicated to finding loving homes for animals in need. We
+                work with shelters and rescue groups across the country to help connect pets with their new families.
+            </p>
+            <a href="/about" class="btn">Learn More</a>
+        </section> -->
+
+        <section class="featured-products">
+            <h2>Featured</h2>
+            <ul class="product-grid">
+                <% for (let product of products) { %>
+                <li>
+                    <figure>
+                        <img src="<%= product.photo %>" alt="Nail">
+                    </figure>
+                    <figcaption>
+                        <div class="featured-info">
+                            <h3><%= product.name %></h3>
+                        </div>
+                        <a href="/products/<%= product._id %>" class="btn" id="roundbtn" >Buy</a>
+                    </figcaption>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

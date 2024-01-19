@@ -5,7 +5,8 @@ const productSchema = require('./product.js')
 const cartSchema = new mongoose.Schema({
     products: [productSchema],
     price: { type: Number, Step: 0.01 },
-    quantity: Number
+    quantity: Number,
+    ispaid: { type: Boolean, default: false }
 });
 
 // Export the schema as a Mongoose model. 
