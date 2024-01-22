@@ -1,15 +1,21 @@
 <header>
     <h1>Kaka's Nails</h1>
     <a href="/">
-        <img src="/assets/icon.jpg" alt="icon" class="icon">
+        <img src="/assets/icon.jpg" alt="icon" class="icon" id="icon">
     </a>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/products">Products</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="#">Cart</a></li>
-            <li><a href="#">Login</a></li>
+            <% if(user) { %>
+                <li>Welcome, <%= user?.name %></li>
+                <li><a href="/users/logout">Logout</a></li>
+            <% } else { %>
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/users/new">Signup</a></li>
+            <% } %>    
         </ul>
     </nav>
 </header>

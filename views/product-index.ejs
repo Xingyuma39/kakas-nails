@@ -3,7 +3,7 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: 'Kaka\'s Nails'}) %>
-    <link rel="stylesheet" href="/styles/pet-index.css">
+    <link rel="stylesheet" href="/styles/product-index.css">
 </head>
 
 <body>
@@ -11,12 +11,31 @@
 
     <section class="hero">
         <h2>Available Products</h2>
-        <h3></h3>
+        <h3><button class="btn"><a href="/products/new">Add a product</a></button></h3>
     </section>
 
     <main>
+        <section class="featured-products">
+            <h2></h2>
+            <ul class="product-grid">
+                <% for (let product of products) { %>
+                <li>
+                    <figure>
+                        <img src="<%= product.photo %>" alt="Nail">
+                    </figure>
+                    <figcaption>
+                        <div class="featured-info">
+                            <h3><%= product.name %></h3>
+                        </div>
+                        <a href="/products/<%= product._id %>" class="btn" id="roundbtn" >Buy</a>
+                    </figcaption>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+
         <section class="listings">
-            <ul>
+            <ul class="product-grid">
                 <% for (let product of products) { %>
                 <li>
                     <figure>
@@ -24,7 +43,7 @@
                         <figcaption>
                             <h4><%= product.name %></h4>
                             <p></p>
-                            <a href="/products/<%= product._id %>">Learn More</a>
+                            <a href="/products/<%= product._id %>" class="btn" id="roundbtn" >Buy</a>
                         </figcaption>
                     </figure>
                 </li>

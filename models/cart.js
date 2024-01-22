@@ -6,7 +6,8 @@ const cartSchema = new mongoose.Schema({
     products: [productSchema],
     price: { type: Number, Step: 0.01 },
     quantity: Number,
-    ispaid: { type: Boolean, default: false }
+    ispaid: { type: Boolean, default: false },
+    user: {type: Schema.Types.ObjectId, ref: 'User'}
 });
 
 // Export the schema as a Mongoose model. 

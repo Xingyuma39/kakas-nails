@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: 'Edit User | Kaka\'s Nails'}) %>
+    <link rel="stylesheet" href="/styles/product-form.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Edit User Details</h2>
+        <h4><i>Change Account Info</i></h4>
+    </section>
+
+    <form method="POST" action="/users/<%= user._id %>?_method=PUT">
+        <!-- Name input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= user.name %>" required>
+        <br>
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" value="<%= user.password %>" required>
+        <br>
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="<%= user.email %>" required>
+        <br>
+        
+        <input type="submit" value="Create User">
+    </form>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

@@ -10,7 +10,7 @@
     <%- include('./partials/nav.ejs') %>
 
     <div>
-        <img src="<%= product.photo %>">
+        <img class="productphoto" src="<%= product.photo %>">
         <h2 class="product-name"><%= product.name %></h2>
         <section>
             <p><strong>Type:</strong> <%= product.type %></p>
@@ -20,6 +20,16 @@
             <p><strong>Quantity:</strong> <%= product.quantity %></p>
             <p><strong>Description:</strong> <%= product.description %></p>
 
+        </section>
+
+        <section class="actions">
+            <button class="btn"><a href="/products/<%= product?._id %>/edit">Edit</a></button>
+            <form method="POST" action="/products/<%= product?._id %>?_method=DELETE">
+                <input class="btn" type="submit" value="Delete" />
+            </form>
+            <form method="POST" action="/products/<%= product?._id %>?_method=PUT">
+                <input class="btn" type="submit" value="Add to cart" />
+            </form>
         </section>
     </div>
 
