@@ -11,15 +11,10 @@ Products Page
 About Page
 ![kakasnails about](https://media.git.generalassemb.ly/user/51683/files/2bcd36d6-bef9-4c62-963e-4effa3006550)
 
-## GitHub Repository
-> Link to your project's GitHub repository here
-
-
 ## User Stories
 - As a friend or family member, I want to check out Kaka's creations, so that I can enjoy the art and support her.
 - As a customer, I want to be kept up to date on new releases, so that I won't miss any.
 - As a customer, I want to be able to contact Kaka in case I have any inquiries or want to buy product.
-
 
 ## MVP Goals (How your specific project will look & behave in order to accomplish MVP)
 - A working full-stack application, using Node.js, Mongoose, Express, EJS, and CSS
