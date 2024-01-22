@@ -10,7 +10,7 @@
             <li><a href="/about">About</a></li>
             <!-- <li><a href="#">Cart</a></li> -->
             <% if(user) { %>
-                <li>Welcome, <%= user?.name %></li>
+                <li><a href="/">Welcome, <%= user?.name %></a></li>
                 <li><a href="/users/logout">Logout</a></li>
             <% } else { %>
                 <li><a href="/users/login">Login</a></li>
