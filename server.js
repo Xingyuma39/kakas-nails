@@ -62,9 +62,9 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 
 app.use(function (req, res, next) {
-    console.log(req.user);
+    // console.log(req.user);
     res.locals.user = req.user;
-    res.locals.cart = req.cart;
+    // res.locals.cart = req.cart;
     next();
 });
 

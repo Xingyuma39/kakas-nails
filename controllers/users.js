@@ -48,7 +48,7 @@ router.get('/login', (req, res) => {
 router.post("/login", async function (req, res) {
     try {
         const user = await User.findOne({ email: req.body.email});
-        console.log(req.body, user, "UserLogin")
+        // console.log(req.body, user, "UserLogin")
         if (req.body.password !== user.password) {
            req.session.userId = null;
            res.redirect("/")

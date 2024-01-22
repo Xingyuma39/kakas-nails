@@ -34,22 +34,6 @@
             </ul>
         </section>
 
-        <section class="listings">
-            <ul class="product-grid">
-                <% for (let product of products) { %>
-                <li>
-                    <figure>
-                        <img src="<%= product.photo %>">
-                        <figcaption>
-                            <h4><%= product.name %></h4>
-                            <p></p>
-                            <a href="/products/<%= product._id %>" class="btn" id="roundbtn" >Buy</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <% } %>
-            </ul>
-        </section>
     </main>
 
     <%- include('./partials/footer.ejs') %>
