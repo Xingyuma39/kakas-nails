@@ -57,10 +57,10 @@ if(process.env.ON_HEROKU === 'false') {
 
 // app.use(connectLiveReload());
 
-app.use(express.static('public'))
-
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static('public'));
+// Allows us to interpret POST requests from the browser as another request type: DELETE, PUT, etc.
+app.use(methodOverride('_method'));
 app.use(function (req, res, next) {
     // console.log(req.user);
     res.locals.user = req.user;
@@ -69,8 +69,7 @@ app.use(function (req, res, next) {
 });
 
 
-// Allows us to interpret POST requests from the browser as another request type: DELETE, PUT, etc.
-app.use(methodOverride('_method'));
+
 
 
 
