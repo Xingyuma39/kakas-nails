@@ -9,19 +9,20 @@ https://kakas-nails-a9a4eee159ed.herokuapp.com/
 ## Application Screenshots
 
 ### Home Screen
-![home](https://github.com/Xingyuma39/kakas-nails/assets/152853230/df6ab9c9-8279-4b9a-b27d-71fae08b3a1e)
+![home1](https://github.com/Xingyuma39/kakas-nails/assets/152853230/a36c5339-27e3-4cfc-962c-8a7ec46260a1)
+![home2](https://github.com/Xingyuma39/kakas-nails/assets/152853230/9ae74619-5fad-4139-bcea-54d72df68f27)
 
 ### Product Page
-![products](https://github.com/Xingyuma39/kakas-nails/assets/152853230/dd0ec7f5-ee22-4011-82f5-ec1ac3dff7ec)
+![products2](https://github.com/Xingyuma39/kakas-nails/assets/152853230/c77d0233-e3b3-41c1-b62a-0046f7209178)
 
 ### Product Details Page
-![product_details](https://github.com/Xingyuma39/kakas-nails/assets/152853230/5f2fd0e5-2d1f-4436-adc7-eb7be3b91a49)
+![product_details](https://github.com/Xingyuma39/kakas-nails/assets/152853230/179f3ce3-8a6b-42ba-8a95-fdadcc820164)
 
 ### About Page
-![about](https://github.com/Xingyuma39/kakas-nails/assets/152853230/92734eb5-000d-4734-a232-2e75d68c92f6)
+![about2](https://github.com/Xingyuma39/kakas-nails/assets/152853230/2fde4095-8adc-4dc2-b039-cd7e990a32d7)
 
 ### Login Page
-![login](https://github.com/Xingyuma39/kakas-nails/assets/152853230/9598ad99-6626-44e6-8603-fa53b81a5def)
+![login2](https://github.com/Xingyuma39/kakas-nails/assets/152853230/64a2a16d-0a89-4f8c-b7b0-b347f21c9650)
 
 
 ## Wire Frames
