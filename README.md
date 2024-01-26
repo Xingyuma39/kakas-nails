@@ -9,14 +9,20 @@ https://kakas-nails-a9a4eee159ed.herokuapp.com/
 ## Application Screenshots
 
 ### Home Screen
+![home](https://github.com/Xingyuma39/kakas-nails/assets/152853230/df6ab9c9-8279-4b9a-b27d-71fae08b3a1e)
 
 ### Product Page
+![products](https://github.com/Xingyuma39/kakas-nails/assets/152853230/dd0ec7f5-ee22-4011-82f5-ec1ac3dff7ec)
+
+### Product Details Page
+![product_details](https://github.com/Xingyuma39/kakas-nails/assets/152853230/5f2fd0e5-2d1f-4436-adc7-eb7be3b91a49)
 
 ### About Page
+![about](https://github.com/Xingyuma39/kakas-nails/assets/152853230/92734eb5-000d-4734-a232-2e75d68c92f6)
 
 ### Login Page
+![login](https://github.com/Xingyuma39/kakas-nails/assets/152853230/9598ad99-6626-44e6-8603-fa53b81a5def)
 
-### Sign Up Page
 
 ## Wire Frames
 Home Page
@@ -36,7 +42,6 @@ About Page
 - ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 - ![markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 - ![express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
-- ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 - ![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 - Mongoose
 - EJS
