@@ -27,7 +27,7 @@ router.get('/', function (req, res) {
 // and redirects the user to the new pet's show page
 router.post("/", async function create(req, res) {
     const user = await User.create(req.body);
-    const newCart = await Cart.create({user: user._id});
+    // const newCart = await Cart.create({user: user._id});
     req.session.userId = user._id;
     req.session.save(function (err) {
         if (err) next(err)

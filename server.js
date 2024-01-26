@@ -7,14 +7,12 @@ const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 const methodOverride = require('method-override');
 const session = require('express-session');
-//configure passport
 
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
 const productsCtrl = require('./controllers/products')
 const usersCtrl = require('./controllers/users')
-
 
 
 /* Require the db connection, models, and seed data
