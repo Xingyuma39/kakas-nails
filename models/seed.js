@@ -41,7 +41,7 @@ const products = [
         price: 59.99,
         quantity: 1,
         photo: "/assets/xmas.jpg",
-        isFeatured: false
+        isFeatured: true
     },
     {
         name: "Peach Glittery Nail Set",
@@ -63,7 +63,7 @@ const products = [
         price: 15.99,
         quantity: 2,
         photo: "/assets/sunflower.jpg",
-        isFeatured: false
+        isFeatured: true
     },
     {
         name: "Baby Yoda Keychain",
@@ -85,7 +85,7 @@ const products = [
         price: 9.99,
         quantity: 2,
         photo: "/assets/gengar.jpg",
-        isFeatured: false
+        isFeatured: true
     },
     {
         name: "Pig & Bee Keychain",

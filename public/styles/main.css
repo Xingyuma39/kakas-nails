@@ -7,16 +7,6 @@
     scrollbar-width: 10px;
 }
 
-*::-webkit-scrollbar {
-    visibility: hidden;
-    width: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border-radius: 2px;
-}
-
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -43,8 +33,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #fff; */
-    /* background: linear-gradient(90deg, #eea7a7 0%, #f1dbb1 50%, #eea7a7 100%); */
     padding: 1rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     margin: 0 0 0 0;
@@ -80,14 +68,20 @@ nav a {
 }
 
 /* Hero section styles */
-.hero {
+.hero, .hero2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #e5ecec; */
     background-color: aliceblue;
-    height: 30vh;
+}
+
+.hero {
+    height: 23vh;
+}
+
+.hero2 {
+    height: 17vh;
 }
 
 .hero h2 {
@@ -96,25 +90,33 @@ nav a {
     text-align: center;
 }
 
-.hero h3 {
+.hero h3, .hero2 h2 {
     font-size: 2rem;
     text-align: center;
 }
 
-.hero h4 {
+.hero h4, .hero2 h3 {
     font-size: 1.5rem;
     text-align: center;
 }
 
+.hero h2:before {
+    content: "✨ ";
+    margin-right: 5px;
+}
+
+.hero h2:after {
+    content: " ✨";
+    margin-right: 5px;
+}
+
+/* button styling */
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    /* background-color: #333; */
     background-color: #e0b8b8;
     background: linear-gradient(45deg, #b150b1 0%, #69b0da 50%, #39ce77 100%);
-    /* color: #fff; */
-    /* color: #333; */
     color:rgb(228, 228, 228);
     border: none;
     border-radius: 35px;
@@ -122,8 +124,8 @@ nav a {
 }
 
 .btn:hover {
-    /* background-color: #555; */
     background-color: #b49393;
+    background: linear-gradient(45deg, #833c83 0%, #4e85a5 50%, #2c9c5b 100%);
 }
 
 #roundbtn {
@@ -134,22 +136,10 @@ nav a {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
     text-align: center;
     padding: 1rem;
-    /* background-color: #333; */
-    /* background: linear-gradient(90deg, #eea7a7 0%, #f1dbb1 50%, #eea7a7 100%); */
-    /* width: calc(100vw - 1rem); */
 }
 
 footer * {
-    /* color: #fff; */
     color:#333;
-}
-
-footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

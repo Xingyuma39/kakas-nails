@@ -35,21 +35,10 @@ textarea {
 }
 
 input[type="submit"] {
-    /* background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease; */
-
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    /* background-color: #333; */
     background-color: #e0b8b8;
-    /* color: #fff; */
-    /* color: #333; */
     color:aliceblue;
     border: none;
     border-radius: 35px;
@@ -57,11 +46,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    /* background-color: #fff;
-    color: #333; */
-    /* border: 1px solid #333; */
     background-color: #b49393;
-
 }
 
 .btn a {

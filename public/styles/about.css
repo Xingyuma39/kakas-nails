@@ -11,33 +11,25 @@
 }
 
 .content h2 {
-    font-size: 25px;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: rgb(233, 167, 167);
     margin: 0 1vw 1vw 1vw;
 }
 
-.content p {
-    margin-bottom: 20px;
-    color: rgb(233, 167, 167);
-    margin: 0 1vw 1vw 1vw;
-}
-
-.content ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 1vw;
-}
-
-.content li:before {
-    content: "✨ ";
-    color: #004080;
-    font-weight: bold;
+.content h2:before {
+    content: "🔯 ";
     margin-right: 5px;
 }
 
-.content li {
+.content h2:after {
+    content: " 🔯";
+    margin-right: 5px;
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
     color: rgb(233, 167, 167);
-    margin: 0 1vw 0 1vw;
+    margin: 0 1vw 1vw 1vw;
 }
