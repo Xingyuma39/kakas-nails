@@ -1,7 +1,7 @@
 /* Reset styles for cross-browser consistency */
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     scrollbar-color: #333;
     scrollbar-width: 10px;
@@ -112,9 +112,10 @@ nav a {
     font-size: 1.2rem;
     /* background-color: #333; */
     background-color: #e0b8b8;
+    background: linear-gradient(45deg, #b150b1 0%, #69b0da 50%, #39ce77 100%);
     /* color: #fff; */
     /* color: #333; */
-    color:aliceblue;
+    color:rgb(228, 228, 228);
     border: none;
     border-radius: 35px;
     cursor: pointer;

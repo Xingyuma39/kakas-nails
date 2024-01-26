@@ -1,77 +1,15 @@
 /* Main content styles */
 main {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
 }
-
-/* .listings {
-    margin-top: 50px;
-}
-
-.listings h1 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.listings ul {
-    list-style: none;
-    padding: 0;
-}
-
-.listings li {
-    margin-bottom: 40px;
-    border: 5px solid #ccc;
-    padding: 20px;
-    border-radius: 35px;
-    position: relative;
-    text-align: center;
-    background-color: aliceblue;
-}
-
-.listings li img {
-    width: calc(33% - 1rem);
-    max-width: 100%;
-    height: auto;
-}
-
-figcaption {
-    text-align: left;
-}
-
-.listings li h4 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.listings li p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.listings li a {
-    background-color: #e0b8b8;
-    color:aliceblue;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
-}
-
-.listings li a:hover {
-    background-color: #b49393;
-} */
 
 /* Featured products section styles */
 .featured-products {
     /* background-color: #f7f7f7; */
     /* background: linear-gradient(90deg, #eea7a7 0%, #f1dbb1 50%, #eea7a7 100%); */
     padding: 2rem;
-    /* height: 55vh; */
 }
 
 .featured-products h2 {
@@ -87,20 +25,42 @@ figcaption {
     margin-top: 2rem;
 }
 
-.product-grid li {
-    width: calc(33% - 1rem);
+.wrapper {
+    width: 30vw;
     min-width: 300px;
+    max-width: 400px;
     height: 30vw;
+    min-height: 300px;
+    max-height: 400px;
+    perspective: 90px;
+    margin-bottom: 3vw;
+}
+
+.product-grid li {
+    width: 30vw;
+    min-width: 300px;
+    max-width: 400px;
+    height: 30vw;
+    min-height: 300px;
+    max-height: 400px;
     margin-bottom: 2rem;
     /* background-color: #fff; */
     background-color: aliceblue;
+    background: linear-gradient(90deg, #eea7a7 0%, #f1dbb1 50%, #eea7a7 100%);
     /* background: transparent; */
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 35px;
-    border-width: 5px;
+    border-width: 4px;
     border-color: aliceblue;
     border-style: solid;
     overflow: hidden;
+    transition: transform 1s;
+}
+
+.product-grid li:hover {
+    transform: rotateX(2deg);
+    border-color: aqua;
+    transition: 1s;
 }
 
 figure {

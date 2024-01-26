@@ -15,11 +15,6 @@ const User = require('../models/user.js')
 router.get('/', function (req, res) {
     User.find({})
         .then(users => res.json(users))
-        // .then(users => {
-        //     res.render('product-index', {
-        //         users: users
-        //     })
-        // })
 })
 
 // Create Route (POST/Create): This route receives the POST request sent from the new route,
@@ -48,7 +43,6 @@ router.get('/login', (req, res) => {
 router.post("/login", async function (req, res) {
     try {
         const user = await User.findOne({ email: req.body.email});
-        // console.log(req.body, user, "UserLogin")
         if (req.body.password !== user.password) {
            req.session.userId = null;
            res.redirect("/")
@@ -80,12 +74,6 @@ router.get('/new', (req, res) => {
 router.get('/:id', function (req, res) {
     User.findById(req.params.id)
         .then(user => res.json(user))
-        // .then(product => {
-        //     res.render('product-details', {
-        //         product: product
-        //     })
-        // })
-        // .catch(() => res.render('404'))
 })
 
 // Update Route (PUT/Update): This route receives the PUT request sent from the edit route, 
@@ -114,7 +102,6 @@ router.get('/:id/edit', (req, res) => {
     User.findById(req.params.id)
         .then(user => res.render('edit-user-form', {user: user}))
 })
-
 
 
 /* Export these routes so that they are accessible in `server.js`

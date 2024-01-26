@@ -11,7 +11,8 @@
 
     <section class="hero">
         <h2>Available Products</h2>
-        <h3><button class="btn"><a href="/products/new">Add a product</a></button></h3>
+        <a href="/products/new" class="btn">Add a product</a>
+
     </section>
 
     <main>
@@ -19,17 +20,19 @@
             <h2></h2>
             <ul class="product-grid">
                 <% for (let product of products) { %>
-                <li>
-                    <figure>
-                        <img src="<%= product.photo %>" alt="Nail">
-                    </figure>
-                    <figcaption>
-                        <div class="featured-info">
-                            <h3><%= product.name %></h3>
-                        </div>
-                        <a href="/products/<%= product._id %>" class="btn" id="roundbtn" >Buy</a>
-                    </figcaption>
-                </li>
+                <div class="wrapper">
+                    <li>
+                        <figure>
+                            <img src="<%= product.photo %>" alt="Nail">
+                        </figure>
+                        <figcaption>
+                            <div class="featured-info">
+                                <h3><%= product.name %></h3>
+                            </div>
+                            <a href="/products/<%= product._id %>" class="btn" id="roundbtn" >Buy</a>
+                        </figcaption>
+                    </li>
+                </div>
                 <% } %>
             </ul>
         </section>
