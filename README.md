@@ -1,6 +1,23 @@
 # kakas-nails
 A MEN-stack application hosted on Heroku that displays my sister's creations.
 
+## Link to Deployed App
+https://kakas-nails-a9a4eee159ed.herokuapp.com/
+
+## Embedded Screenshot
+
+## Application Screenshots
+
+### Home Screen
+
+### Product Page
+
+### About Page
+
+### Login Page
+
+### Sign Up Page
+
 ## Wire Frames
 Home Page
  ![kakasnails home](https://media.git.generalassemb.ly/user/51683/files/43998d1c-79ff-4156-972f-2a5349af0972)
@@ -10,6 +27,19 @@ Products Page
 
 About Page
 ![kakasnails about](https://media.git.generalassemb.ly/user/51683/files/2bcd36d6-bef9-4c62-963e-4effa3006550)
+
+## Technologies Used
+- ![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+- ![node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+- ![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+- ![markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+- ![express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+- ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+- Mongoose
+- EJS
 
 ## User Stories
 - As a friend or family member, I want to check out Kaka's creations, so that I can enjoy the art and support her.
@@ -26,7 +56,6 @@ About Page
 - Hosted on Heroku.
 - Be able to let new users sign up
 - Be able to let new users login with their email and password
-
 
 ## Route Table
 Route table that will define and describe what each route in our application is doing. 
